@@ -1,0 +1,38 @@
+---
+title: "course 9 peer assignment"
+author: "Sandra van de Beld"
+date: "23-12-2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## introduction
+I have made an interactive app. 
+The app consist of the following: 
+-selection of datasets: you can choose from 3 different datasets
+-selection of number of rows shown: you can choose how many rows you want to see in the head() function
+-a summary table that shows the statistics of the dataset that is chosen
+-the dataframe, you see the number of rows that are selected
+
+
+## example of the summary table shown in the shiny app
+The example below shows the summary table for the pressure dataset, this dataset is one of the datasets that can be chosen from within the shiny app. 
+
+```{r}
+summary(pressure)
+```
+
+## example of the dataframe shown in the shiny app
+the expample below shows the dataframe with 10 rows, the number of rows can be chosen witin the shiny app
+
+```{r pressure, echo=TRUE}
+head(cars, 10)
+```
+
+## Link to the shiny app
+the shiny app can be found at: https://svdb.shinyapps.io/course9/
+the code of this presentation can be found at: https://github.com/sandravandebeld/course9
